@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento - Tarot Santo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <h1>Tarot Santo</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="leituras.html">Escolha sua leitura</a>
+    <a href="agendamento.html">Agende sua consulta</a>
+    <a href="pagamentos.html">Formas de pagamento</a>
+    <a href="feedbacks.html">Feedbacks</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<div class="container">
+
+    <aside class="sidebar">
+            <h2>Leituras</h2>
+            <ul>
+                 <li><a href="agendamento.html">Cruz Celta</a></li>
+                <li><a href="agendamento.html">Perguntas objetivas</a></li>
+                <li><a href="agendamento.html">Tarot sim ou não</a></li>
+                <li><a href="agendamento.html">3 cartas (Passado, presente e futuro)</a></li>
+                <li><a href="agendamento.html">Templo de Afrodite</a></li>
+            </ul>
+        </aside>
+        
+    <section class="content">
+        <h2>Agende sua consulta</h2>
+        <form action="agendamento.php" method="POST">
+            <label>Seu nome:</label><br>
+            <input type="text" name="nome" required><br><br>
+
+            <label>Seu e-mail:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Escolha a leitura:</label><br>
+            <select name="leitura_id" required>
+                <option value="1">Cruz Celta</option>
+                <option value="2">Perguntas objetivas</option>
+                <option value="3">Tarot sim ou não</option>
+                <option value="4">3 cartas (Passado, Presente e Futuro)</option>
+                <option value="5">Templo de Afrodite</option>
+            </select><br><br>
+
+            <label>Data da consulta:</label><br>
+            <input type="date" name="data_consulta" required><br><br>
+
+            <label>Horário:</label><br>
+            <input type="time" name="horario" required><br><br>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    2019 <a href="index.html">Tarot Santo</a> - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
